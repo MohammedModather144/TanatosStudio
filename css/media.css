@@ -1,0 +1,43 @@
+@media(max-width:767px){
+  .header .intro .desc{
+    width: 85%;
+  }
+  .button-primary-tem{
+    width: 150px;
+    padding: .5rem 0;
+  }
+  .button-secondry-tem{
+    width: 150px;
+    padding: .5rem 0;
+  }
+  .subscribe input {
+    width: 80vw;
+    padding: 8px;
+    margin-bottom: 30px;
+  }
+  .subscribe button {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    margin-left: unset;
+    margin-bottom: -1.3rem;
+  }
+  .main-header .desc{
+    width: 90%;
+  }
+  .testimonials .client .desc{
+    width: 70%;
+  }
+  .testimonials .container .fa-chevron-right {
+    position: absolute;
+    right: 15px;
+    top: 60%;
+  }
+  .testimonials .container .fa-chevron-left {
+    position: absolute;
+    left: 15px;
+    top: 60%;
+  }
+  .contact-us .contact-form{
+    width: 95%;
+  }
+}

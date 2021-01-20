@@ -1,0 +1,514 @@
+/* 
+* Template Name       : TanatosStudio
+* Start Date          : 15-1-2021
+* Last Update         : 19-1-2021
+* Version             : 1.0
+* Contact Me          : mohammedmodather144@gmail.com
+*/
+/* 
+* 1- Genral Template
+* 2- Style Section
+*  2-0- Header Section 
+*  2.1- Features Section
+*  2.2- Subscribe Section 
+*  2.3- Our Work Section 
+*  2.4- Testimonials Section
+*  2.5- Our Team Section
+*  2.6- Contact Us Section
+*  2.7- Footer Section 
+*  2.8- Scroll Top 
+*  2.9- Loading 
+* 3- Commen Style
+*  3.0- Main Color 
+*  3.1- Button Primary Main
+*  3.2- Button Secondry Main
+*  3.3- Font Family All  
+*  3.4- Overlay  
+*  3.5- Main Header Section  
+*  3.6- Soical Media Icon 
+*  3.7- Place Holder 
+*  3.8- Scroll Bar Design
+*/
+/* 1- Genral Style */
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  /* overflow: hidden !important; */
+}
+html{
+  --mainColor:#f7600e;
+  --SecondryColor:#E2E2E2;
+}
+body{
+  font-family: "proxima-nova" !important;
+  /* overflow: hidden !important; */
+}
+/* 2- Style Section */
+/*  2-0 Header Section */
+.header{
+  background-image: url(../images/macbook-bg.png);
+  background-size: cover;
+  position: relative;
+}
+.header .logo h1{
+  font-size: 1.8rem;
+  font-weight: 800;
+}
+.header .intro{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  transform: translate(-50%,-50%);
+}
+.header .intro .title{
+  margin: 0;
+  font-weight: 800;
+  font-size: 2rem;
+}
+.header .intro .desc{
+  width: 65%;
+  line-height: 1.8;
+  color: var(--SecondryColor);
+  margin: auto;
+  margin-top: .8rem;
+  margin-bottom: 2.5rem;
+}
+.header .arrow{
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.header .arrow i{
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  border: 1px solid #ffffff;
+  margin-bottom: 1.5rem;
+}
+/* 2.1- Features  Section */
+.features{
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+.features .features-box i{
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  line-height: 100px;
+  color: var(--mainColor);
+  border: 1px solid var(--SecondryColor);
+  margin-bottom: 1rem;
+  transition: all 1s ease-in-out;
+}
+.features .features-box i:hover{
+  background-color: var(--mainColor);
+  border: 1px solid var(--mainColor);
+  color: var(--SecondryColor);
+}
+.features .features-box .title{
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  font-weight: 800;
+  color: #000000;
+}
+.features .features-box .desc{
+  color: #888888;
+  line-height: 1.8;
+  font-size: .8rem;
+}
+/* 2.2- Subscribe Section */
+.subscribe{
+  background-image: url(../images/tablet-bg.png);
+  background-size: cover;
+  background-attachment: fixed;
+}
+.subscribe input{
+  width: 40vw;
+  padding: 8px;
+}
+.subscribe ::placeholder{
+  color: #999999;
+  opacity: 0.8;
+}
+.subscribe button{
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+  margin-left: -10px;
+}
+.subscribe button:hover{
+  border-color: var(--mainColor);
+  background-color: var(--mainColor);
+}
+/* 2.3- Our Work Section */
+.our-work .work-item {
+  margin-bottom: 1.4rem;
+  position: relative;
+}
+.our-work .work-item img{
+  width: 100%;
+}
+.our-work .work-item:hover .overlay{
+  display: block;
+  transition: all 1s ease-in-out;
+}
+.our-work .work-item .overlay{
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(247, 96, 14, 0.8);
+  color: #ffffff;
+  border-radius: .6rem;
+  transition: all 1s ease-in-out;
+}
+.our-work .work-item .overlay .info{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.our-work .work-item .overlay .info .title{
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+.our-work .work-item .overlay .info .desc{
+  line-height: 1.8;
+  color: #eee; 
+}
+.our-work .work-item .overlay .info button{
+  font-size: .9rem;
+}
+.our-work .work-item .overlay .info button:hover{
+  color: var(--mainColor);
+  background-color: #ffffff;
+}
+.our-work .btn-more:hover{
+  color: #ffffff !important;
+}
+/* 2.4- Testimonials Section  */
+.testimonials{
+  background-image: url(../images/woman-bg.png);
+  background-size: cover;
+  background-attachment: fixed;
+  color: #ffffff;
+}
+.testimonials .container{
+  position: relative;
+}
+.testimonials .container .fa-chevron-left{
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.testimonials .container .fa-chevron-right{
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.testimonials .container i:hover{
+  color: var(--mainColor);
+  cursor: pointer;
+}
+.testimonials .client .images{
+  width: 130px;
+  height: 130px;
+}
+.testimonials .client .desc{
+  line-height: 1.8;
+  width: 50%;
+  margin: auto;
+  color: #eeee;
+  font-style: italic;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.testimonials .client .name{
+  font-weight: 800;
+  font-size: 1.2rem;
+}
+/* 2.5- Our Team  Section*/
+.our-team .info{
+  padding: 2rem 1rem;
+  border-radius: .5rem;
+  box-shadow: 0 0 12px #F4F4F4;
+}
+.our-team .info .image img{
+  width: 130px;
+  height: 130px;
+  margin-bottom: 1rem;
+  filter: grayscale(1);
+  transition: all .8s ease-in-out;
+}
+.our-team .info .name{
+  font-weight: 800;
+  font-size: 1.3rem;
+  color: #000000;
+  margin-top: 1rem;
+}
+.our-team .info .desc{
+  line-height: 1.7;
+  width: 85%;
+  color: #888888;
+  font-size: .8rem;
+  margin: auto;
+}
+.our-team .info:hover .image img{
+  filter: grayscale(0);
+}
+/* 2.6- Contact Us Section*/
+.contact-us{
+  position: relative;
+  background-image: url(../images/city-bg.png);
+  background-attachment: fixed;
+  background-size: cover;
+  color: #ffffff !important;
+}
+.contact-us .main-header .title{
+  color: #ffffff;
+}
+.contact-us .main-header .desc{
+  color: #ffffff;
+}
+.contact-us .contact-form{
+  width: 60%;
+  margin: auto;
+}
+.contact-us .contact-form input,
+.contact-us .contact-form textarea{
+  background-color: #F8F8F8;
+  resize: none;
+  font-size: .8rem;
+  border-radius: .5rem;
+  border: none;
+  padding: .6rem;
+}
+.contact-us .social-links li i{
+ background-color: var(--mainColor);
+}
+/* 2.7- Footer Section */
+.footer{
+  color: #ffffff;
+  background-color: #3B434C;
+}
+.footer p{
+  font-size: .8rem;
+  margin-bottom: 0;
+}
+/* 2.8- Scroll Top */
+#scroll-top{
+  display: none;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  color: white;
+  background-color: var(--mainColor);
+  position: fixed;
+  z-index: 9999;
+  right: 15px;
+  bottom: 10px;
+  cursor: pointer;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+#scroll-top i{
+  line-height: 35px;
+}
+#scroll-top:hover{
+  background-color: var(--mainColor);
+}
+/* 2.9- Loading */
+.loading-overlay{
+  color: white;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background-color: var(--mainColor);
+  width: 100%;
+  height: 100%;
+  z-index: 99999;
+}
+.spinner {
+  top: 25%;
+  margin: 100px auto;
+  width: 40px;
+  text-align: center;
+  font-size: 14px;
+  height: 40px;
+  position: relative;
+}
+.cube1, .cube2 {
+  background-color: #ffffff;
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-animation: sk-cubemove 1.8s infinite ease-in-out;
+  animation: sk-cubemove 1.8s infinite ease-in-out;
+}
+.cube2 {
+  -webkit-animation-delay: -0.9s;
+  animation-delay: -0.9s;
+}
+@-webkit-keyframes sk-cubemove {
+  25% { -webkit-transform: translateX(42px) rotate(-90deg) scale(0.5) }
+  50% { -webkit-transform: translateX(42px) translateY(42px) rotate(-180deg) }
+  75% { -webkit-transform: translateX(0px) translateY(42px) rotate(-270deg) scale(0.5) }
+  100% { -webkit-transform: rotate(-360deg) }
+}
+@keyframes sk-cubemove {
+  25% { 
+    transform: translateX(42px) rotate(-90deg) scale(0.5);
+    -webkit-transform: translateX(42px) rotate(-90deg) scale(0.5);
+  } 50% { 
+    transform: translateX(42px) translateY(42px) rotate(-179deg);
+    -webkit-transform: translateX(42px) translateY(42px) rotate(-179deg);
+  } 50.1% { 
+    transform: translateX(42px) translateY(42px) rotate(-180deg);
+    -webkit-transform: translateX(42px) translateY(42px) rotate(-180deg);
+  } 75% { 
+    transform: translateX(0px) translateY(42px) rotate(-270deg) scale(0.5);
+    -webkit-transform: translateX(0px) translateY(42px) rotate(-270deg) scale(0.5);
+  } 100% { 
+    transform: rotate(-360deg);
+    -webkit-transform: rotate(-360deg);
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 3- Commen Style */
+/*  3.0- Main Color */
+.main-color{
+  color: var(--mainColor);
+}
+/* 3.1- Button Primary Main */
+.button-primary-tem{
+  font-family: "proxima-nova";
+  background-color: var(--mainColor);
+  color: #ffffff;
+  border-radius: .6rem;
+  width: 170px;
+  padding: .5rem 2rem;
+  border: 1px solid var(--mainColor);
+  transition: all .7s ease-in-out;
+}
+.button-primary-tem:hover{
+  background:transparent;
+  color: #ffffff;
+  border: 1px solid #E2E2E2;
+}
+/* 3.2- Button Secondry Main */
+.button-secondry-tem{
+  font-family: "proxima-nova";
+  background:transparent;
+  border-radius: .6rem;
+  padding: .5rem 2rem;
+  width: 170px;
+  color: #ffffff;
+  border: 1px solid #E2E2E2;
+  transition: all .7s ease-in-out;
+
+}
+.button-secondry-tem:hover{
+  background-color: var(--mainColor);
+  border: 1px solid var(--mainColor);
+  color: #ffffff;
+}
+/* 3.3- Font Family All  */
+@font-face{
+  font-family: "proxima-nova";
+  src: url(../fonts/ProximaNova-Regular.otf);
+}
+/* 3.4- Overlay  */
+.overlay{
+  padding-top: .7rem;
+  background-color: rgba(49, 55, 61,0.8);
+  color: var(--SecondryColor);
+  width: 100%;
+  height: 100%;
+}
+/* 3.5- Main Header Section   */
+.main-header .title{
+  font-size: 1.8rem;
+  font-weight: bolder;
+  color: #000000;
+}
+.main-header .desc{
+  width: 70%;
+  margin: auto;
+  color: #888888;
+  line-height: 1.8;
+  font-size: .8rem;
+}
+/* 3.6- Soical Media Icon */
+.social-links li{
+  display: inline-block;
+  margin: 0px.5rem;
+}
+.social-links li i{
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  border-radius: 50%;
+  color: #ffffff;
+  background-color: var(--SecondryColor);
+  transition: all .7s ease-in-out;
+  cursor: pointer;
+}
+.social-links li i:hover{
+  background-color: var(--mainColor);
+}
+/* 3.7- Place Holder */
+::placeholder{
+  font-size: .8rem;
+  color: #cccccc !important;
+}
+/* 3.8- Scroll Bar Design*/
+::-webkit-scrollbar {
+  background-color: #1d1d1f;
+  width: 8px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #7e7d7d5d;
+  border-radius: 7px
+}
+
+::-moz-scrollbar {
+  background-color: #1d1d1f;
+  width: 8px;
+}
+::-moz-scrollbar-thumb {
+  background-color: #7e7d7d5d;
+  border-radius: 7px
+}
+
+::-o-scrollbar {
+  background-color: #1d1d1f;
+  width: 8px;
+}
+::-o-scrollbar-thumb {
+  background-color: #7e7d7d5d;
+  border-radius: 7px;
+}
